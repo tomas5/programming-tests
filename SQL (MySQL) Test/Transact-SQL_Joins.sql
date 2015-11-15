@@ -44,9 +44,10 @@ CREATE TABLE tbl2
 INSERT tbl1 VALUES (1, 'A'), (2, 'B'), (3, 'C')
 INSERT tbl2 VALUES (2, 'D'), (3, 'E'), (4, 'F')
 
-/* Answer */
+/* Correct Answer */
 
-SELECT * FROM tbl1
+SELECT *
+FROM tbl1
 LEFT JOIN tbl2 ON tbl1.id = tbl2.id;
 
 /*
@@ -67,6 +68,29 @@ ON tbl1.id = tbl2.id
 id          name                                               id          letter
 ----------- -------------------------------------------------- ----------- --------------------------------------------------
 1           A                                                  NULL        NULL
+2           B                                                  2           D
+3           C                                                  3           E
+NULL        NULL                                               4           F
+*/
+
+SELECT *
+FROM tbl1
+JOIN tbl2 ON tbl1.id = tbl2.id;
+
+/*
+id          name                                               id          letter
+----------- -------------------------------------------------- ----------- --------------------------------------------------
+2           B                                                  2           D
+3           C                                                  3           E
+*/
+
+SELECT *
+FROM tbl1
+RIGHT JOIN tbl2 ON tbl1.id = tbl2.id;
+
+/*
+id          name                                               id          letter
+----------- -------------------------------------------------- ----------- --------------------------------------------------
 2           B                                                  2           D
 3           C                                                  3           E
 NULL        NULL                                               4           F
