@@ -144,3 +144,19 @@ SELECT TOP 30 * FROM tableOfData ORDER BY id desc;
 SELECT TOP 50 PERCENT * FROM tableOfData;
 -- my own solution would be:
 SELECT TOP 60 * FROM (SELECT TOP 30 * FROM tableOfData) as a
+
+
+/*
+Which SQL query will return the last value of the column with the atribute AUTO_INCREMENT ?
+
+1. SELECT AUTO_INCREMENT();
+2. SELECT LAST_ID();
+3. SELECT LAST_INSERT_ID();
+4. None of the above.
+
+*/
+
+/*
+Answer:
+This answer intentionally left blank
+*/
