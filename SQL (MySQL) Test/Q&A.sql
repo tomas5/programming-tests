@@ -109,3 +109,12 @@ Removes one or more table definitions and all data, indexes, triggers, constrain
 Any view or stored procedure that references the dropped table must be explicitly dropped by using DROP VIEW or DROP PROCEDURE. 
 
 */
+
+/*
+Difference between SQL views and tables?
+*/
+
+/*
+Answer:
+This answer intentionally left blank
+*/
