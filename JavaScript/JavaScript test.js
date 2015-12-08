@@ -1,30 +1,8 @@
-﻿// Which of the following methods does the "document" object have?
-
-// Options:
-
-getElementsByTagName
-getElementById
-querySelectorAll
-getElementsBySelector
-getElementByClassName
-
-// Answer: https://developer.mozilla.org/en-US/docs/Web/API/Document
-
-// Document.getElementsByTagName() - Returns a list of elements with the given tag name.
-
-// document.getElementById(String id) - Returns an object reference to the identified element.
-
-// document.querySelectorAll(String selector) - Returns a list of all the Element nodes within the document that match the specified selectors.
-
-//-------------------------------------------------------------------
-
-// Which of the following statements are true?
-
-// 1. JavaScript can react to events.
-
-// 2. JavaScript can create cookies.
-
-// 3. JavaScript can read and write HTML elements.
+﻿/*
+#######################
+### JavaScript Test ###
+#######################
+*/
 
 //-------------------------------------------------------------------
 
@@ -50,7 +28,6 @@ arr[arr.length] = value
 
 // 7.
 None of the above
-
 
 //-------------------------------------------------------------------
 
@@ -155,27 +132,6 @@ person.ShowName();
 
 // 6.
 // You cannot define a method for the object in JavaScript
-
-//-------------------------------------------------------------------
-
-//  Which of the following are valid comparison operators in JavaScript?
-
-// 1.
-===
-
-// 2.
-<>
-
-// 3.
-=>
-
-// 4.
-!==
-
-// 5.
-==
-
-// Note: You can select any number of answers (zero, one or more than one)
 
 //-------------------------------------------------------------------
 
@@ -295,5 +251,106 @@ document.getElement("link").href = "http://google.com";
 
 //-------------------------------------------------------------------
 
+// Consider the following code:
 
+<script type="text/javascript">
+
+	function A(param) {
+		var m = param;
+		m = m + 10;
+		return m;
+	}
+	function B(param) {
+		var n = param;
+		n = 20;
+	}
+
+	var result = A(10)*B(10);
+
+</script>
+
+// What will be the value of "result" ?
+
+// 1.	0
+// 2.	200
+// 3.	400
+// 4.	20
+// 5.	NaN
+
+// Answer => NaN
+// A(10) => 20
+// B(10) => undefined
+
+// Notes: The isNaN() function determines whether a value is an illegal number (Not-a-Number).
+
+//-------------------------------------------------------------------
+
+// Consider the following code:
+
+<script type="text/javascript">
+
+	function a() { return "1st"; };
+
+	function a(val) { this.a1 = "right"; return "2nd"; };
+
+	var result = new a().a1;
+
+</script>
+
+// What will be the value of "result" ?
+
+// 1.	right
+// 2.	2nd
+// 3.	undefined
+// 4.	1st
+// 5.	null
+// 6. 	Nothing, the script is not correct.
+
+// Answer. result => right
+// Discussion: a() => "2nd"
+
+
+//-------------------------------------------------------------------
+
+// Consider the following code:
+
+<script type="text/javascript">
+
+	var num = 1;
+	var result = num++ * 10 + 1;
+
+</script>
+
+// What will be the value of "result" ?
+
+// 1.	21
+// 2.	11
+// 3.	3
+// 4.	22
+
+// Answer: result => 11
+
+//-------------------------------------------------------------------
+
+// Consider the following code:
+
+<script type="text/javascript">
+
+	var s = 'Hello world';
+
+	s[0] = 'W';
+
+</script>
+
+// What will be the value of "s" ?
+
+// 1.	'Hello world'
+// 2.	'W'
+// 3.	'Wello world'
+// 4.	Nothing, the script is not correct
+
+// Answer: s => "Hello world"
+// Discussion: s[0] = 'H'
+
+//-------------------------------------------------------------------
 
