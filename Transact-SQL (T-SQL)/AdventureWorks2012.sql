@@ -15,6 +15,12 @@ SSMS -> Connect to your server ->
  confirm everything by clicking 'OK' button.
 */
 
+/*
+SET NOCOUNT { ON | OFF } 
+Stops the message that shows the count of the number of rows affected by a Transact-SQL statement
+ or stored procedure from being returned as part of the result set.
+*/
+
 use AdventureWorks2012
 go
 
@@ -242,10 +248,44 @@ insert into EmployeeTableCopy
 select 1000,NationalIDNumber,LoginID,OrganizationNode,OrganizationLevel,JobTitle,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,rowguid,ModifiedDate
 from HumanResources.Employee where BusinessEntityID = 1
 
+/*
+The ROLLBACK statement will clear the @@TRANCOUNT variable
+to 0 because all active transactions will be rolled back.
+*/
 --rollback
 -- commit
 
 select * from EmployeeTableCopy
 
+/*
+--DBCC OPENTRAN helps to identify active transactions that may be preventing log truncation:
+DBCC OPENTRAN 
 
+--To remove uncommitted or open transactions:
+KILL server process ID
+--for example: KILL 54
 
+*/
+
+/* --- Playground --- */
+--SET NOCOUNT ON
+
+-- Simple transaction with ROLLBACK
+BEGIN tran -- TRANSACTION = TRAN
+	insert into Inventory values (100, 200, 300)
+	WAITFOR DELAY '00:00:30'
+	--WAITFOR DELAY '00:00:30' -- wait for 30 seconds to make changes
+	IF @@ROWCOUNT > 0 -- Returns the number of rows affected by the last statement. 
+		begin
+			COMMIT TRANSACTION
+			PRINT N'Successfully Committed'
+		end
+	ELSE
+		begin
+			ROLLBACK TRANSACTION
+			PRINT N'Failed Committ'
+		end
+
+select * FROM Inventory
+
+select @@TRANCOUNT as ' the number of transaction statements'
