@@ -1,0 +1,45 @@
+<config>
+	<uploadfoldername>C:\DataUpload\Uploads</uploadfoldername>
+	<archivefoldername>C:\DataUpload\Archive</archivefoldername>
+	<configfoldername>C:\Web\CustomPages\Config</configfoldername>
+	<logfoldername>C:\Data\Logs</logfoldername>
+	<logactive>No</logactive>
+	<splitfilerows>4000</splitfilerows>
+	<filetypes>
+		<filetype id="150" organizationid="OrgID70" paygroupid="PayGroupID190" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="151" organizationid="OrgID70" paygroupid="PayGroupID191" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="152" organizationid="OrgID71" paygroupid="PayGroupID192" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="153" organizationid="OrgID71" paygroupid="PayGroupID193" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="154" organizationid="OrgID71" paygroupid="PayGroupID194" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="155" organizationid="OrgID71" paygroupid="PayGroupID195" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="156" organizationid="OrgID71" paygroupid="PayGroupID196" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv3.xml"></filetype>
+		<filetype id="175" organizationid="OrgID77" paygroupid="PayGroupID212" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="176" organizationid="OrgID79" paygroupid="PayGroupID214" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="341" organizationid="OrgID140" paygroupid="PayGroupID394" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="342" organizationid="OrgID141" paygroupid="PayGroupID395" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="343" organizationid="OrgID141" paygroupid="PayGroupID396" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="344" organizationid="OrgID141" paygroupid="PayGroupID397" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="345" organizationid="OrgID141" paygroupid="PayGroupID398" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="346" organizationid="OrgID141" paygroupid="PayGroupID399" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="347" organizationid="OrgID141" paygroupid="PayGroupID400" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="348" organizationid="OrgID141" paygroupid="PayGroupID401" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="349" organizationid="OrgID141" paygroupid="PayGroupID402" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="350" organizationid="OrgID141" paygroupid="PayGroupID403" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="351" organizationid="OrgID141" paygroupid="PayGroupID404" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="352" organizationid="OrgID141" paygroupid="PayGroupID405" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="353" organizationid="OrgID141" paygroupid="PayGroupID406" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="354" organizationid="OrgID142" paygroupid="PayGroupID407" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="355" organizationid="OrgID143" paygroupid="PayGroupID408" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="356" organizationid="OrgID144" paygroupid="PayGroupID409" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="357" organizationid="OrgID144" paygroupid="PayGroupID410" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="358" organizationid="OrgID144" paygroupid="PayGroupID411" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="359" organizationid="OrgID145" paygroupid="PayGroupID412" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="360" organizationid="OrgID145" paygroupid="PayGroupID413" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="361" organizationid="OrgID148" paygroupid="PayGroupID422" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="362" organizationid="OrgID148" paygroupid="PayGroupID423" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="363" organizationid="OrgID149" paygroupid="PayGroupID425" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="437" organizationid="OrgID171" paygroupid="PayGroupID484" filetypeid="EXAMPLE2" configfile="OrgStandardEXAMPLEDataMapping.XML"></filetype>
+		<filetype id="438" organizationid="OrgID171" paygroupid="PayGroupID484" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+		<filetype id="440" organizationid="OrgID171" paygroupid="PayGroupID484" filetypeid="EXAMPLE1" configfile="OrgStandardEXAMPLEDataMappingv1.XML"></filetype>
+	</filetypes>
+</config>
