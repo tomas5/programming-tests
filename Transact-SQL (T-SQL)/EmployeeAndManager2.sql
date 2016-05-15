@@ -127,17 +127,17 @@ SELECT empid, managerid, name, salary FROM ( SELECT *,RANK() OVER ( ORDER BY sal
 */
 
 /*
----------------------		------------------------------
-| empid	|	name    |		| empid	|	name    | rownum |
---------+------------		--------+-----------+---------
-|  1	|	Diana	|		|  1	|	Diana	|	1	 |
-|  2	|	Alex	|   =>  |  3	|	Clark	|   2	 |
-|  3	|	Clark	|		|  4	|	Buffi	|	3	 |
-|  4 	|	Buffi	|		|  2 	|	Alex	|	4	 |
----------------------		------------------------------
+------------------------				------------------------------------
+| empid |	name    |				| empid |	name   | rownum |
+----------+------------				---------+-----------+-------------
+|  1		|	Diana	|				|  1	  	|	Diana	|		1		 |
+|  2		|	Alex		|  		 => 	|  3		|	Clark	|   	2		 |
+|  3		|	Clark	|				|  4		|	Buffi		|		3		 |
+|  4 		|	Buffi		|				|  2 		|	Alex		|		4		 |
+-----------------------				-------------------------------------
 */
 
-/* For  SQL Server 2005 */
+/* For  SQL Server 2005+ */
 SELECT empid, name, ROW_NUMBER() OVER(ORDER BY name DESC) AS 'rownum'
 FROM TBL_EMP
 
